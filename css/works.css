@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+
+    font-size: 48px;
+    padding: 1rem;
+    text-align: center;
+    width: 40vw;
+    min-width: 400px;
+    height: auto;
+    text-transform: uppercase;
+}
+
+.box h2 {
+    font-family: "GLight", "Noto Sans KR";
+    margin: 0;
+    padding: 0;
+    font-size: 1.75rem;
+}
+
+.item {
+    display: flex;
+    font-size: 2rem;
+    width: 35vw;
+    height: 35vh;
+    position: relative;
+    box-shadow: 0 .75rem 1rem .2rem rgb(166, 166, 166);
+}
+
+.item .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35vw;
+    height: 35vh;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+    text-align: center;
+}
+
+.content h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.item:hover .content {
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    transition: .35s;
+}
+
+.item img {
+    width: 35vw;
+    height: 35vh;
+    object-fit: cover;
+}
+
+.item:hover img {
+    filter: blur(.3rem);
+    transition: .5s;
+}
+
+.box .more {
+    border: 1px solid black;
+    width: 35vw;
+    padding: 1rem 0;
+}
+
+.box .more:hover {
+    background: gray;
+    color: white;
+    transition: .5s;
+}
+
+.box a {
+    color: black;
+}
+
+@media only screen and (max-width: 855px) {
+    .box h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 855px) {
+    .box {
+        min-width: 50vw;
+    }
+
+    .item {
+        width: 80vw;
+    }
+    
+    .item .content {
+        width: 80vw;
+    }
+
+    .item img {
+        width: 80vw;
+    }
+}

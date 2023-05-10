@@ -1,0 +1,28 @@
+.wrapper {
+    display: grid;
+    margin-top: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    background: grey;
+    min-width: 320px;
+    min-height: 400px;
+}
+
+.box h1 {
+    margin: auto;
+}
+
+@media only screen and (min-width:615px)and (max-width:850px) {
+    .wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+
+}

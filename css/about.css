@@ -1,0 +1,165 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: url("../resources/img/about_front.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title_container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50%;
+    padding: 60px 0;
+    backdrop-filter: blur(7px);
+}
+
+.intro .intro_item {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.intro h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.intro h2 {
+    font-family: "GLight", "Noto Sans KR";
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.major {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+}
+
+.major h3 {
+    color: gray;
+}
+
+.major_item {
+    width: 50vw;
+    padding: .75rem 0;
+    line-height: 2.5rem;
+}
+
+.major p {
+    font-family: "Noto Sans KR";
+    line-height: 2.25rem;
+}
+
+.wrapper {
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    min-height: 400px;
+}
+
+.box img {
+    width: 320px;
+    height: auto;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.track {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.track img {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+
+.logo-slide img {
+    height: 300px;
+    margin: 0 40px;
+}
+
+#logo_title {
+    margin-top: 300px;
+}
+
+@media only screen and (max-width: 1077px) {
+    .title_container {
+        width: 100%;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .track img {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .major_item {
+        width: 80vw;
+    }
+
+}
